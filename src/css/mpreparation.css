@@ -1,0 +1,175 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card Container */
+.mpreparation-card-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.mpreparation-patient-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.mpreparation-patient-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  font-size: 22px;
+  color: #fff;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Meal Section */
+.mpreparation-meal-section {
+  margin-top: 20px;
+}
+
+.mpreparation-meal-item {
+  margin-bottom: 15px;
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mpreparation-meal-item h5 {
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.status-text {
+  font-size: 16px;
+  color: green;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+button:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+/* Loading and Error Messages */
+.mpreparation-loading-container,
+.mpreparation-error-container {
+  font-size: 18px;
+  color: #ffcc00;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .mpreparation-card-container {
+    padding: 10px;
+  }
+
+  .mpreparation-patient-card {
+    padding: 15px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .mpreparation-meal-item {
+    padding: 8px;
+  }
+
+  .mpreparation-meal-item h5 {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mpreparation-card-container {
+    padding: 5px;
+  }
+
+  .mpreparation-patient-card {
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .mpreparation-meal-item {
+    padding: 5px;
+  }
+
+  .mpreparation-meal-item h5 {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}

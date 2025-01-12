@@ -1,0 +1,152 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mdelivery-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mdelivery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mdelivery-search-bar {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.mdelivery-add-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mdelivery-add-button:hover {
+  background-color: #218838;
+}
+
+.mdelivery-card-scroll-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.mdelivery-person-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mdelivery-person-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.mdelivery-person-card h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mdelivery-person-card p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin: 5px 0;
+}
+
+.mdelivery-person-card .mdelivery-edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.mdelivery-person-card .mdelivery-edit-button:hover {
+  background-color: #0056b3;
+}
+
+.mdelivery-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mdelivery-person-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 500px;
+}
+
+.mdelivery-person-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.mdelivery-person-form input,
+.mdelivery-person-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.mdelivery-person-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.mdelivery-person-form button:hover {
+  background-color: #218838;
+}
+
+.mdelivery-person-form .mdelivery-error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}

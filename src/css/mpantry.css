@@ -1,0 +1,203 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mpantry-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mpantry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mpantry-search-bar {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.mpantry-add-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mpantry-add-button:hover {
+  background-color: #218838;
+}
+
+.mpantry-card-scroll-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mpantry-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mpantry-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.mpantry-card h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mpantry-card p {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin: 5px 0;
+}
+
+.mpantry-card .mpantry-edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.mpantry-card .mpantry-edit-button:hover {
+  background-color: #0056b3;
+}
+
+.mpantry-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mpantry-form {
+  background-color: black;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 500px;
+}
+
+.mpantry-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.mpantry-form input,
+.mpantry-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.mpantry-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.mpantry-form button:hover {
+  background-color: #218838;
+}
+
+.mpantry-error-message {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .mpantry-container {
+      padding: 10px;
+  }
+
+  .mpantry-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .mpantry-search-bar {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .mpantry-add-button {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .mpantry-card-scroll-container {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .mpantry-card {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .mpantry-form {
+      width: 90%;
+      padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mpantry-search-bar {
+      width: 100%;
+  }
+
+  .mpantry-form input,
+  .mpantry-form select,
+  .mpantry-form button {
+      font-size: 1rem;
+  }
+
+  .mpantry-add-button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1rem;
+  }
+}

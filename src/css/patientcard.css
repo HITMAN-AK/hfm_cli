@@ -1,0 +1,58 @@
+/* Patientcard Styles */
+.patient-card-container {
+  background-color: #1e1e1e;
+  width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  transition: all 0.3s ease;
+}
+
+.patient-card-container:hover {
+  transform: scale(1.05);
+}
+
+.patient-card-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.patient-card-details {
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.patient-card-details p {
+  margin-bottom: 10px;
+}
+
+.patient-card-details strong {
+  color: #007bff;
+}
+
+.patient-card-edit-button {
+  display: block;
+  width: max-content;
+  height: max-content;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.patient-card-edit-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.patient-card-edit-button:active {
+  transform: scale(1);
+}

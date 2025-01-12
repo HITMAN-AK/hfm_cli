@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  display: flex;
+  justify-content: flex-start;  /* Align to the start to avoid the center */
+  align-items: flex-start;  /* Ensure top alignment */
+  height: 100vh;
+  overflow: hidden; /* Prevent overflow issues */
+  padding-top: 20px; /* Space from top */
+}
+
+.mpatient-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-y: auto;  /* Allow scrolling within the container */
+  height: calc(100vh - 40px);  /* Ensure container height accounts for padding */
+}
+
+.mpatient-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  z-index: 10;  /* Ensure header stays on top */
+}
+
+.mpatient-search-bar {
+  width: 70%;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #333;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.mpatient-search-bar:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #333;
+}
+
+.mpatient-add-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mpatient-add-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.mpatient-card-scroll-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px; /* Ensure space between header and cards */
+  padding-bottom: 20px; /* Prevent overflow of cards */
+  overflow-y: auto; /* Allow scrolling within the card container */
+}
+
+.mpatient-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mpatient-patient-form {
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.mpatient-patient-form h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.mpatient-patient-form input,
+.mpatient-patient-form select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.mpatient-patient-form input:focus,
+.mpatient-patient-form select:focus {
+  border-color: #007bff;
+  background-color: #333;
+  outline: none;
+}
+
+.mpatient-patient-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mpatient-patient-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.mpatient-patient-form button:active {
+  transform: scale(1);
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+      transform: translateY(50px);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .mpatient-patient-form {
+      width: 90%;
+      padding: 20px;
+  }
+}

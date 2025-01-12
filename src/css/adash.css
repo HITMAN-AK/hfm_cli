@@ -1,0 +1,87 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Dashboard Styles */
+.adash-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-out;
+  width: 100%;
+  padding: 20px;
+}
+
+.adash-links-container {
+  background: #1e1e1e;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.adash-dashboard-link {
+  text-align: center;
+  padding: 12px;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.adash-dashboard-link:hover {
+  background-color: #007bff;
+  transform: scale(1.05);
+}
+
+.adash-dashboard-link:active {
+  transform: scale(1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .adash-links-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
