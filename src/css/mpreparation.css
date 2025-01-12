@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,6 @@ body {
   height: 100vh;
 }
 
-/* Card Container */
 .mpreparation-card-container {
   width: 100%;
   max-width: 1200px;
@@ -49,7 +48,7 @@ p {
   margin-bottom: 10px;
 }
 
-/* Meal Section */
+
 .mpreparation-meal-section {
   margin-top: 20px;
 }
@@ -102,7 +101,6 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Loading and Error Messages */
 .mpreparation-loading-container,
 .mpreparation-error-container {
   font-size: 18px;
@@ -111,7 +109,7 @@ button:disabled {
   margin-top: 50px;
 }
 
-/* Responsive Design */
+
 @media screen and (max-width: 768px) {
   .mpreparation-card-container {
     padding: 10px;

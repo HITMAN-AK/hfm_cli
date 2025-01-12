@@ -75,9 +75,9 @@ function Mdelivery() {
           )
         );
       } else {
-        // Add new delivery person
+       
         const res = await axios.post(`${process.env.REACT_APP_API_URL}/adelivery`, formData);
-        setDeliveryPersons([...deliveryPersons, res.data]); // Add the new person to the list
+        setDeliveryPersons([...deliveryPersons, res.data]); 
       }
       setShowForm(false);
       setFormData({
@@ -139,7 +139,7 @@ function Mdelivery() {
               value={formData.uname}
               onChange={handleFormChange}
               required
-              disabled={isEditing} // Prevent editing username during update
+              disabled={isEditing}
             />
             <input
               type="password"

@@ -1,4 +1,4 @@
-/* Global Styling */
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #121212;
@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Container */
+
 .container {
   padding: 20px;
   width: 100%;
@@ -33,7 +33,6 @@ body {
 }
 
 
-/* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -49,7 +48,6 @@ body {
   justify-content: center;
 }
 
-/* Checkbox Styling */
 .filter-checkboxes input {
   margin-right: 10px;
   accent-color: #007bff;
@@ -62,7 +60,6 @@ body {
   align-items: center;
 }
 
-/* Card Styling */
 .card {
   border: 1px solid #444;
   border-radius: 8px;
@@ -114,7 +111,7 @@ body {
   color: #ddd;
 }
 
-/* Scrollable Container */
+
 .card-scroll-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -126,7 +123,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Scrollbar Customization */
 .card-scroll-container::-webkit-scrollbar {
   width: 6px;
 }
@@ -136,7 +132,6 @@ body {
   border-radius: 3px;
 }
 
-/* Button Styling */
 .add-button {
   padding: 12px 24px;
   font-size: 18px;
@@ -152,7 +147,6 @@ body {
   background-color: #0056b3;
 }
 
-/* Responsive Adjustments */
 @media (min-width: 768px) {
   .container {
     padding: 40px;

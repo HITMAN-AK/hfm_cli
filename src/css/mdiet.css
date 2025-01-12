@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -10,9 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  margin-top: 20px; /* Added margin-top for spacing */
-  overflow: auto; /* Allow scrolling if needed */
-  height: calc(100vh - 40px); /* Make sure container occupies full height */
+  margin-top: 20px; 
+  overflow: auto; 
+  height: calc(100vh - 40px); 
 }
 
 .mdiet-header {

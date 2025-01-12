@@ -8,13 +8,13 @@ function Log() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false); // Track loading state
+  const [isLoading, setIsLoading] = useState(false); 
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
-    setIsLoading(true); // Set loading state to true
+    setIsLoading(true); 
 
     try {
       const response = await axios.post(
@@ -44,7 +44,7 @@ function Log() {
         setError("Server error. Please try later.");
       }
     } finally {
-      setIsLoading(false); // Reset loading state
+      setIsLoading(false); 
     }
   };
 

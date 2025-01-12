@@ -89,7 +89,6 @@ function Tp() {
 
   return (
     <div>
-      {/* Filter Checkboxes */}
       <div className="filter-checkboxes">
         <label>
           <input
@@ -119,8 +118,6 @@ function Tp() {
           Night Preparation
         </label>
       </div>
-
-      {/* Render Meal Plan Cards or Show No Data Message */}
       {filteredMealData.length > 0 ? (
         filteredMealData.map((data, index) => (
           data.patientDetails && data.mealPlan ? (

@@ -76,7 +76,7 @@ function Mpantry() {
         );
       } else {
         const res = await axios.post(`${process.env.REACT_APP_API_URL}/apantry`, formData);
-        setPantries([...pantries, res.data]); // Add the new pantry to the list
+        setPantries([...pantries, res.data]); 
       }
       setShowForm(false);
       setFormData({
@@ -88,7 +88,7 @@ function Mpantry() {
       });
     } catch (err) {
       console.error("Error saving pantry:", err);
-      // Handle error for username duplication
+ 
       if (err.response?.data?.message === "Username already exists. Please choose a unique one.") {
         setError("Username already exists. Please choose a unique one.");
       } else {

@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +9,11 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #121212;
   display: flex;
-  justify-content: flex-start;  /* Align to the start to avoid the center */
-  align-items: flex-start;  /* Ensure top alignment */
+  justify-content: flex-start;  
+  align-items: flex-start; 
   height: 100vh;
-  overflow: hidden; /* Prevent overflow issues */
-  padding-top: 20px; /* Space from top */
+  overflow: hidden; 
+  padding-top: 20px; 
 }
 
 .mpatient-container {
@@ -21,15 +21,15 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  overflow-y: auto;  /* Allow scrolling within the container */
-  height: calc(100vh - 40px);  /* Ensure container height accounts for padding */
+  overflow-y: auto;  
+  height: calc(100vh - 40px);  
 }
 
 .mpatient-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  z-index: 10;  /* Ensure header stays on top */
+  z-index: 10; 
 }
 
 .mpatient-search-bar {
@@ -69,9 +69,9 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin-top: 20px; /* Ensure space between header and cards */
-  padding-bottom: 20px; /* Prevent overflow of cards */
-  overflow-y: auto; /* Allow scrolling within the card container */
+  margin-top: 20px;
+  padding-bottom: 20px; 
+  overflow-y: auto; 
 }
 
 .mpatient-form-overlay {
@@ -144,7 +144,7 @@ body {
   transform: scale(1);
 }
 
-/* Animations */
+
 @keyframes slideUp {
   from {
       transform: translateY(50px);
@@ -154,7 +154,7 @@ body {
   }
 }
 
-/* Responsive Design */
+
 @media screen and (max-width: 480px) {
   .mpatient-patient-form {
       width: 90%;

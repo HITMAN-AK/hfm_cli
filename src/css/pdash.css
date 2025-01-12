@@ -1,25 +1,25 @@
-/* Container for the whole page */
+
 .pdash-main-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #121212; /* Background color for dark theme */
+  background-color: #121212;
   color: #fff;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
-/* Links Container */
+
 .pdash-links-container {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Space between the links */
+  gap: 20px;
   text-align: center;
 }
 
-/* Individual Link Styling */
+
 .pdash-link {
   display: inline-block;
   padding: 15px 30px;
@@ -34,14 +34,14 @@
 
 .pdash-link:hover {
   background-color: #0056b3;
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05); 
 }
 
 .pdash-link:active {
   background-color: #003f7f;
 }
 
-/* Responsive Styling */
+
 @media (min-width: 768px) {
   .pdash-link {
     font-size: 20px;

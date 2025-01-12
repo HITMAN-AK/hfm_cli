@@ -3,7 +3,7 @@ a {
     color: inherit;
   }
   
-  /* Sidebar Toggle Button */
+ 
   .sidebar-toggle {
     position: fixed;
     top: 15px;
@@ -22,7 +22,7 @@ a {
     background-color: #333;
   }
   
-  /* Sidebar */
+ 
   .sidebar {
     position: fixed;
     top: 0;
@@ -34,7 +34,7 @@ a {
     overflow-y: auto;
     transition: all 0.3s ease;
     z-index: 1000;
-    padding-top: 60px; /* To ensure items don't overlap with the toggle button */
+    padding-top: 60px; 
   }
   
   .sidebar.open {
@@ -63,7 +63,7 @@ a {
     border-radius: 5px;
   }
   
-  /* Overlay */
+
   .overlay {
     position: fixed;
     top: 0;
@@ -75,7 +75,7 @@ a {
     animation: fadeIn 0.3s ease;
   }
   
-  /* Animations */
+ 
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -85,7 +85,7 @@ a {
     }
   }
   
-  /* Responsive Design */
+
   @media screen and (max-width: 480px) {
     .sidebar ul li a {
       font-size: 16px;

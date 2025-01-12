@@ -50,7 +50,7 @@ body {
   font-size: 16px;
 }
 
-/* Delivery Cards */
+
 .ddash-delivery-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -77,7 +77,7 @@ body {
   margin-top: 15px;
 }
 
-/* Status Buttons */
+
 .ddash-status-btn {
   padding: 12px 24px;
   font-size: 16px;
@@ -102,7 +102,7 @@ body {
   background-color: #c82333;
 }
 
-/* Responsive Adjustments */
+
 @media (min-width: 768px) {
   .ddash-container {
     padding: 40px;

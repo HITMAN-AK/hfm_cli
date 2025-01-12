@@ -6,8 +6,8 @@ function Adelivery() {
   const [combinedData, setCombinedData] = useState([]);
   const [deliveryPersons, setDeliveryPersons] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedMealPlan, setSelectedMealPlan] = useState(null); // Track selected meal plan
-  const [selectedMealType, setSelectedMealType] = useState(""); // Track selected meal type
+  const [selectedMealPlan, setSelectedMealPlan] = useState(null); 
+  const [selectedMealType, setSelectedMealType] = useState(""); 
 
   useEffect(() => {
     const fetchCombinedData = async () => {

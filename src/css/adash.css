@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +13,6 @@ body {
   align-items: center;
   height: 100vh;
 }
-
-/* Dashboard Styles */
 .adash-dashboard {
   display: flex;
   justify-content: center;
@@ -78,7 +76,6 @@ body {
   }
 }
 
-/* Responsive Design */
 @media screen and (max-width: 480px) {
   .adash-links-container {
     width: 90%;
